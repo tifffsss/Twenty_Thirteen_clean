@@ -10,7 +10,7 @@ Good practice and cool plugin to install :
 - install W3 Total Cache (to activate once the development is over or you will not be able to see your css and js updates)
 - install WP-Optimize (db cleaner)
 - in wp-config.php add `define('WP_POST_REVISIONS',2);` to keep only 2 revisions max per posts
-- in .htaccess add :
+- in .htaccess add (at the project root, not in the theme folder):
 ```
 <FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)(\.gz)?$">
 Header set Expires "Thu, 15 Apr 2016 20:00:00 GMT"
@@ -66,3 +66,10 @@ FileETag None
 
 </IfModule>
 ```
+- YSlow (Firefox) is cool (try to keep a grade B max on each page)
+- Do not put to many plugins or content on the homepage (first page seen by users, can not be slow)
+- Try to avoid jquery if it's possible
+- In Settings > Discussion, uncheck 'Allow pingback and trackback' and everything useless
+- Do not install too many plugins, ask you if you really need a plugin or if you can do it yourself
+- Use P3 (Plugin Performance Profiler) to check how many requests are done by wordpress (not really sure it works)
+
